@@ -52,27 +52,31 @@
       </div>
       <div class="nav-item" data-slide="5">
         <span class="nav-item-number">06</span>
+        La chaîne
+      </div>
+      <div class="nav-item" data-slide="6">
+        <span class="nav-item-number">07</span>
         Valeur
       </div>
       <!-- Value detail slides (6-9) map to nav item 06 -->
-      <div class="nav-item" data-slide="10">
-        <span class="nav-item-number">07</span>
-        Options
-      </div>
       <div class="nav-item" data-slide="11">
         <span class="nav-item-number">08</span>
-        Preuves
+        Options
       </div>
       <div class="nav-item" data-slide="12">
         <span class="nav-item-number">09</span>
-        Implantation
+        Preuves
       </div>
-      <div class="nav-item" data-slide="14">
+      <div class="nav-item" data-slide="13">
         <span class="nav-item-number">10</span>
-        Questions
+        Implantation
       </div>
       <div class="nav-item" data-slide="15">
         <span class="nav-item-number">11</span>
+        Questions
+      </div>
+      <div class="nav-item" data-slide="16">
+        <span class="nav-item-number">12</span>
         Démarrage
       </div>
     </div>
@@ -272,7 +276,101 @@
     </section>
 
     <!-- SLIDE 5: VALUE OVERVIEW -->
-    <section class="slide" data-chapter="valeur" data-slide="5">
+        <!-- CHAINE DE VALEUR -->
+    <section class="slide" data-chapter="chaine" data-slide="5">
+      <div class="slide-inner">
+        <h1 class="slide-title">Où se situe la maîtrise du taux</h1>
+
+        <style>
+          @keyframes chainFade { from { opacity: 0; transform: translateX(-24px); } to { opacity: 1; transform: translateX(0); } }
+          @keyframes chainGlow { from { opacity: 0; } to { opacity: 1; } }
+          .atmp-chain { display: flex; align-items: stretch; gap: 0; width: 100%; max-width: 1180px; margin: 32px auto 0; }
+          .atmp-link { flex: 1; padding: 24px 13px; position: relative; text-align: center; color: #fff; }
+          .atmp-link:first-child { border-radius: 16px 0 0 16px; }
+          .atmp-link:last-child { border-radius: 0 16px 16px 0; }
+          .atmp-link-dim { background: linear-gradient(180deg, rgba(0,61,121,0.7) 0%, rgba(0,61,121,0.5) 100%); }
+          .atmp-link-active { background: linear-gradient(135deg, #003d79 0%, #0ab38c 100%); z-index: 2; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,61,121,0.35); }
+          .atmp-number { font-size: 36px; font-weight: 700; opacity: 0.2; line-height: 1; margin-bottom: 6px; }
+          .atmp-link-active .atmp-number { opacity: 0.35; }
+          .atmp-title { font-size: 14.5px; font-weight: 700; margin-bottom: 9px; line-height: 1.3; }
+          .atmp-link-active .atmp-title { font-size: 16px; }
+          .atmp-bullets { text-align: left; font-size: 11px; opacity: 0.85; line-height: 1.5; list-style: none; padding: 0; margin: 0; }
+          .atmp-bullets li { padding-left: 12px; position: relative; margin-bottom: 4px; }
+          .atmp-bullets li::before { content: '\2022'; position: absolute; left: 0; color: rgba(255,255,255,0.6); }
+          .atmp-link-active .atmp-bullets li::before { color: rgba(255,255,255,0.9); }
+          .atmp-offer { font-size: 10.5px; opacity: 0.5; margin-top: 12px; font-style: italic; }
+          .atmp-link-active .atmp-offer { opacity: 0.75; }
+          .atmp-arrow { display: flex; align-items: center; font-size: 18px; color: rgba(0,61,121,0.35); margin: 0 -6px; z-index: 1; }
+          .atmp-footer { text-align: center; margin-top: 26px; }
+          .atmp-footer p { font-size: 14px; color: #777; }
+          .atmp-footer strong { color: #003d79; }
+          .slide.active .atmp-link, .slide.active .atmp-arrow, .slide.active .atmp-footer { opacity: 0; animation: chainFade 0.6s cubic-bezier(0.22,1,0.36,1) 0.2s forwards; }
+          .slide.active .atmp-arrow { animation-delay: 0.4s; }
+          .slide.active .atmp-footer { animation-delay: 0.7s; }
+          .slide.active .atmp-link-active { animation: chainGlow 0.7s cubic-bezier(0.22,1,0.36,1) 0.35s forwards; }
+        </style>
+
+        <div class="atmp-chain">
+          <div class="atmp-link atmp-link-dim">
+            <div class="atmp-number">1</div>
+            <div class="atmp-title">Déclarer l'accident</div>
+            <ul class="atmp-bullets">
+              <li>Déclaration probante</li>
+              <li>Réserves motivées</li>
+            </ul>
+            <div class="atmp-offer">Déclarer un accident du travail</div>
+          </div>
+          <div class="atmp-arrow">&#9654;</div>
+          <div class="atmp-link atmp-link-dim">
+            <div class="atmp-number">2</div>
+            <div class="atmp-title">Défendre le dossier</div>
+            <ul class="atmp-bullets">
+              <li>Questionnaire MP instruit</li>
+              <li>Imputation contestée</li>
+            </ul>
+            <div class="atmp-offer">Questionnaire de maladie professionnelle</div>
+          </div>
+          <div class="atmp-arrow">&#9654;</div>
+          <div class="atmp-link atmp-link-dim">
+            <div class="atmp-number">3</div>
+            <div class="atmp-title">Piloter les arrêts AT</div>
+            <ul class="atmp-bullets">
+              <li>Détection dès 45 jours</li>
+              <li>Coût des arrêts maîtrisé</li>
+            </ul>
+            <div class="atmp-offer">Piloter les arrêts longue durée</div>
+          </div>
+          <div class="atmp-arrow">&#9654;</div>
+          <div class="atmp-link atmp-link-dim">
+            <div class="atmp-number">4</div>
+            <div class="atmp-title">Récupérer les coûts des tiers</div>
+            <ul class="atmp-bullets">
+              <li>Tiers responsable identifié</li>
+              <li>Coûts récupérés</li>
+            </ul>
+            <div class="atmp-offer">Accidents causés par un tiers</div>
+          </div>
+          <div class="atmp-arrow">&#9654;</div>
+          <div class="atmp-link atmp-link-active">
+            <div class="atmp-number">5</div>
+            <div class="atmp-title">Maîtriser le taux AT/MP</div>
+            <ul class="atmp-bullets">
+              <li>Compte employeur vérifié</li>
+              <li>Taux projeté à 3 ans</li>
+              <li>Cotiser au juste taux</li>
+            </ul>
+            <div class="atmp-offer">Cette offre</div>
+          </div>
+        </div>
+
+        <div class="atmp-footer">
+          <p>Ayming vous accompagne sur chaque maillon. <strong>Le taux est l'aboutissement financier de toute la chaîne.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE OVERVIEW -->
+    <section class="slide" data-chapter="valeur" data-slide="6">
       <div class="slide-inner">
         <h1 class="slide-title">Ce qu'Ayming vous apporte</h1>
 
@@ -325,7 +423,7 @@
     </section>
 
     <!-- SLIDE 6: VALUE DETAIL 1 -->
-    <section class="slide" data-chapter="valeur-1" data-slide="6">
+    <section class="slide" data-chapter="valeur-1" data-slide="7">
       <div class="value-detail-layout">
         <div class="value-detail-content">
           <h2>Voir venir le taux, ne plus le découvrir</h2>
@@ -362,7 +460,7 @@
     </section>
 
     <!-- SLIDE 7: VALUE DETAIL 2 -->
-    <section class="slide" data-chapter="valeur-2" data-slide="7">
+    <section class="slide" data-chapter="valeur-2" data-slide="8">
       <div class="value-detail-layout">
         <div class="value-detail-content">
           <h2>Vérifier ce qui est imputé à votre compte</h2>
@@ -399,7 +497,7 @@
     </section>
 
     <!-- SLIDE 8: VALUE DETAIL 3 -->
-    <section class="slide" data-chapter="valeur-3" data-slide="8">
+    <section class="slide" data-chapter="valeur-3" data-slide="9">
       <div class="value-detail-layout">
         <div class="value-detail-content">
           <h2>Anticiper l'impact sur 3 ans</h2>
@@ -436,7 +534,7 @@
     </section>
 
     <!-- SLIDE 9: VALUE DETAIL 4 -->
-    <section class="slide" data-chapter="valeur-4" data-slide="9">
+    <section class="slide" data-chapter="valeur-4" data-slide="10">
       <div class="value-detail-layout">
         <div class="value-detail-content">
           <h2>Faire baisser le taux en agissant sur la sinistralité</h2>
@@ -473,7 +571,7 @@
     </section>
 
     <!-- SLIDE 10: OPTIONS -->
-    <section class="slide" data-chapter="options" data-slide="10" style="background: var(--bg-light);">
+    <section class="slide" data-chapter="options" data-slide="11" style="background: var(--bg-light);">
       <div class="slide-inner">
         <h1 class="slide-title">Aller plus loin : agir en amont sur ce qui alimente votre taux</h1>
 
@@ -556,7 +654,7 @@
     </section>
 
     <!-- SLIDE 11: PREUVES -->
-    <section class="slide" data-chapter="preuves" data-slide="11">
+    <section class="slide" data-chapter="preuves" data-slide="12">
       <div class="slide-inner">
         <h1 class="slide-title">Ils nous font confiance</h1>
 
@@ -625,7 +723,7 @@
     </section>
 
     <!-- SLIDE 12: IMPLANTATION FRANCE -->
-    <section class="slide" data-chapter="implantation" data-slide="12">
+    <section class="slide" data-chapter="implantation" data-slide="13">
       <div class="slide-inner">
         <div class="ancrage-layout">
           <div class="ancrage-text">
@@ -644,7 +742,7 @@
     </section>
 
     <!-- SLIDE 13: IMPLANTATION INTERNATIONAL -->
-    <section class="slide" data-chapter="implantation" data-slide="13">
+    <section class="slide" data-chapter="implantation" data-slide="14">
       <div class="slide-inner">
         <h1 class="slide-title">
           ... avec des bureaux dans <strong>14 pays</strong> pour une proximité accrue
@@ -663,7 +761,7 @@
     </section>
 
     <!-- SLIDE 14: QUESTIONS -->
-    <section class="slide" data-chapter="questions" data-slide="14">
+    <section class="slide" data-chapter="questions" data-slide="15">
       <div class="slide-inner">
         <h1 class="slide-title">Questions qu'on nous pose</h1>
 
@@ -708,7 +806,7 @@
     </section>
 
     <!-- SLIDE 15: DEMARRAGE -->
-    <section class="slide" data-chapter="demarrage" data-slide="15">
+    <section class="slide" data-chapter="demarrage" data-slide="16">
       <div class="slide-inner">
         <h1 class="slide-title">Ce dont nous avons besoin</h1>
 
